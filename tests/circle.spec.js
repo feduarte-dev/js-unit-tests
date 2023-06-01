@@ -33,6 +33,5 @@ describe('4 - Implemente os casos de teste para a função `circle`', () => {
     expect(circle(3)).toHaveProperty('area', 28.259999999999998);
     expect(circle(3)).toHaveProperty('radius', 3);
     expect(circle(3)).toHaveProperty('circumference', 18.84);
-    
   });
 });
