@@ -7,10 +7,26 @@
     - Um array. Exemplos: [1, 2]; [1, 2, 3, 4, 5]; [1, 2, '3']; [];
   Comportamento:
     - average([2, 2]) // Retorno: 2;
-    - average([1, 1]) // Reetorno: 1;
+    - average([1, 1]) // Retorno: 1;
     - average([1, '2']) // Retorno: undefined;
 */
 
-const average = () => {};
-
+const average = (array) => {
+  if (array.length === 0) {
+    return undefined;
+  }
+  let sum = 0;
+  let result;
+  for (let index = 0; index < array.length; index += 1) {
+    if (typeof array[index] !== 'number') {
+      return undefined;
+    }
+  }
+  for (let index = 0; index < array.length; index += 1) {
+    sum += array[index];
+  }
+  result = Math.round(sum / array.length);
+  return result;
+};
+console.log(average([1, 2, 3, 4, '5']));
 module.exports = average;
