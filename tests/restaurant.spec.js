@@ -18,8 +18,10 @@ describe('10 - Implemente a função `createMenu`, bem como seus casos de teste'
     // Requisito 5
     expect(createMenu({ food: {}, drinks: {} })).toHaveProperty('consumption', []);
     // Requisito 9/10
-    // expect(objetoRetornadoCreateMenu.order('agua')).toHaveProperty('consumption', 'agua');
-    // expect(objetoRetornadoCreateMenu.order('sanduiche')).toHaveProperty('consumption', []);
-    // expect(objetoRetornadoCreateMenu.order('agua')).toHaveProperty('consumption', []);
+    objetoRetornadoCreateMenu.order('agua');
+    objetoRetornadoCreateMenu.order('agua');
+    objetoRetornadoCreateMenu.order('sanduiche');
+    expect(objetoRetornadoCreateMenu.consumption).toHaveLength(3);
+
   });
 });
