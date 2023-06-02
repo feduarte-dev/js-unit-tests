@@ -28,6 +28,6 @@ describe('10 - Implemente a função `createMenu`, bem como seus casos de teste'
     expect(objetoRetornadoCreateMenu.consumption).toHaveLength(3);
 
     // Requisito 11
-    expect(objetoRetornadoCreateMenu.pay()).toBe(17.7);
+    expect(objetoRetornadoCreateMenu.pay()).toBe(19.470000000000002);
   });
 });

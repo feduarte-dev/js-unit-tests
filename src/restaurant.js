@@ -72,7 +72,8 @@ const createMenu = (objeto) => {
           }
         }
       }
-      return count1 + count;
+      let resultado = (count + count1) * 1.1;
+      return resultado;
     },
   };
 
