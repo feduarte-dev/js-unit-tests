@@ -19,8 +19,8 @@ const createMenu = (objeto) => {
     consumption: [],
     order: (item) => {
       if (
-        !Object.keys(restaurante.fetchMenu().food).includes(item) &&
-        !Object.keys(restaurante.fetchMenu().drinks).includes(item)
+        !Object.keys(restaurante.fetchMenu().food).includes(item) 
+        && !Object.keys(restaurante.fetchMenu().drinks).includes(item)
       ) {
         return 'Item indisponível';
       }
