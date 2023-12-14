@@ -1,4 +1,4 @@
-# README: Library organization
+# README: Javascript unit tests
 
 <img src="assets/js-unit-tests.png" alt="page" title="page" width=100%>
 
